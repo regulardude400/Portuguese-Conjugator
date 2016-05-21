@@ -1,5 +1,5 @@
-Conjugator-Pytuguesa 
-Created by Alvin Williams
+#Conjugator-Pytuguesa 
+#Created by Alvin Williams
 5/21/2016
 
 Portuguese Conjugator takes a word and conjugates it into the imperative, subjunctive and infinitive.
