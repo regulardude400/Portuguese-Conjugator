@@ -5,7 +5,6 @@ By Alvin Williams
 #List of Irregular modules to import for special case conjugation.
 
 from caber import *
-'''
 from crer import *
 from dar import *
 from estar import *
@@ -28,14 +27,13 @@ from trazer import *
 from valer import *
 from ver import *
 from vir import *
-'''
 
 
 List_of_Irr = {"ter":1,"estar":2,"ser":3,"ir":4,"querer":5,"fazer":6,"dar":7,"saber":8,"caber":9,"crer":10,
                "haver":11,"ler":12,"perder":13,"poder":14,"trazer":15,"valer":16,"ver":17,"pôr":18,
                "medir":19,"ouvir":20,"remir":21,"rir":22,"vir":23}
 
-class Conjugator(object):
+class Conjugator():
     print("Welcome to the Portuguese Conjugator ver 1.0\n")
     print("Please make the python shell fullscreen to display\nthis program correctly.")
     def __init__(self, userinput):
@@ -46,6 +44,7 @@ class Conjugator(object):
         self.irregular = False
         print("\n\n"+"{:^70}".format(userinput.upper()))
         if userinput in List_of_Irr:
+            print("fat")
             f = open(userinput+".py", 'r')
             conjugator(userinput)
             w = input("\nWould you like to conjugate another word? \nPress any key to continue or type quit or n to end the program. ")
@@ -57,6 +56,7 @@ class Conjugator(object):
                 a = Conjugator(i)
             
         elif userinput[-2:] == "er":
+            print("fuck")
             self.er = True
             self.conjugator_er(userinput)
         elif userinput[-2:] == "ar":

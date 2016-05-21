@@ -1,4 +1,4 @@
-def conjugator(self, userinput):
+def conjugator(userinput):
         k = userinput[:-2]
         print("------------------------------Indicativo--------------------------------------------------------------")
         print("Form            Presente                         Passado Perfeito              Passado Imperfeito")
@@ -38,12 +38,4 @@ def conjugator(self, userinput):
         print("Nós" +"{:<13}".format(" ") + k + "enhamos " + "nós" +"{:<21}".format(" ") + "não " + k + "enhmos nós" +"{:<12}".format(" ") + " para " +  k + "ermos nós")
         print("Vós" +"{:<13}".format(" ") + k + "ende " + "vós" +"{:<23}".format(" ") + "não " + k + "enhais vós" +"{:<13}".format(" ") + " para " +  k + "erdes vós")
         print("Eles/Elas/Vocês"+" " + k + "enham " + "eles/elas/vocês" +"{:<11}".format(" ") + "não " + k + "enham vocês" +"{:<12}".format(" ") + " para " +  k + "erem vocês")
-        
-        w = input("\nWould you like to conjugate another word? \nPress any key to continue or type quit to end the program. ")
-        if w.lower() == "quit":
-            print("\nQuitting the program\n")
-            print("Thank you for using this conjugator made by Alvin.\n")
-        else:
-            i = input("\nPlease type in the next word. ")
-            a = Conjugator(i)
-
+       
