@@ -1,16 +1,50 @@
-class Conjugator():
-    print("Welcome to the Portuguese Conjugator ver 0.9\n")
+'''
+Portuguese Conjugator 1.0
+By Alvin Williams
+'''
+#List of Irregular modules to import for special case conjugation.
+
+from caber import *
+from crer import *
+from dar import *
+from estar import *
+from fazer import *
+from haver import *
+from ir import *
+from ler import *
+from medir import *
+from ouvir import *
+from perder import *
+from poder import *
+from pôr import *
+from querer import *
+from remir import *
+from rir import *
+from saber import *
+from ser import *
+from ter import *
+from trazer import *
+from valer import *
+from ver import *
+from vir import *
+
+
+List_of_Irr = {"ter":1,"estar":2,"ser":3,"ir":4,"querer":5,"fazer":6,"dar":7,"saber":8,"caber":9,"crer":10,
+               "haver":11,"ler":12,"perder":13,"poder":14,"trazer":15,"valer":16,"ver":17,"pôr":18,
+               "medir":19,"ouvir":20,"remir":21,"rir":22,"vir":23}
+class Conjugator(object):
+    print("Welcome to the Portuguese Conjugator ver 1.0\n")
     def __init__(self, userinput):
         self.userinput = userinput
         self.er = False
         self.ar = False
         self.ir = False
         self.irregular = False
-        if userinput[-2:] == "er":
+        if userinput in List_of_Irr:
+            f = open(userinput+".py", 'r')
+            conjugator(self,userinput)
+        elif userinput[-2:] == "er":
             self.er = True
-            if userinput in open("irregular.txt").read():
-                print("\nirregular\n")
-                conjugator_irregular(userinput)
             self.conjugator_er(userinput)
         elif userinput[-2:] == "ar":
             self.ar = True
@@ -167,4 +201,4 @@ class Conjugator():
             i = input("\nPlease type in the next word. ")
             a = Conjugator(i)
        
-C = Conjugator("falir")
+
