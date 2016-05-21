@@ -1,4 +1,3 @@
-
 def conjugator(self, userinput):
         k = userinput[:-2]
         print("------------------------------Indicativo--------------------------------------------------------------")
@@ -6,7 +5,7 @@ def conjugator(self, userinput):
         print("------------------------------------------------------------------------------------------------------")
         print("Yo" +"{:<14}".format(" ") + k + "enho" + "{:<28}".format(" ") +k + "ive" + "{:<25}".format(" ") + k + "inha") 
         print("Tu" +"{:<14}".format(" ") + k + "ens" + "{:<27}".format(" ") + k + "iveste" + "{:<22}".format(" ") + k + "inhas")  
-        print("Ele/Ela/Você" +"{:<4}".format(" ")+ k + "em" + "{:<28}".format(" ") + k + "eve" + "{:<24}".format(" ") + k + "inha")
+        print("Ele/Ela/Você" +"{:<4}".format(" ")+ k + "z" + "{:<28}".format(" ") + k + "eve" + "{:<24}".format(" ") + k + "inha")
         print("Nós" +"{:<13}".format(" ") + k + "emos" + "{:<25}".format(" ") + k + "ivemos" + "{:<22}".format(" ") + k + "ínhamos")
         print("Vós" +"{:<13}".format(" ") + k + "endes" + "{:<26}".format(" ") + k + "ivestes" + "{:<21}".format(" ") + k + "ínheis")
         print("Eles/Elas/Vocês"+" " + k + "êm" + "{:<27}".format(" ") + k + "iveram" + "{:<22}".format(" ") + k + "enham")
