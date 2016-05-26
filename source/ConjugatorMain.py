@@ -59,7 +59,6 @@ class Conjugator():
                 a = Conjugator(i)
             
         elif userinput[-2:] == "er":
-            print("fuck")
             self.er = True
             self.conjugator_er(userinput)
         elif userinput[-2:] == "ar":
